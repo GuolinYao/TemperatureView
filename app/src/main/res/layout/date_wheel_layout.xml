@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:layout_marginBottom="15dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:background="@drawable/six_dp_corner_shape_white"
+>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/six_dp_corner_shape_white"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:text="取消"
+            android:background="@color/transparent"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:textColor="#00acf0"
+            android:textSize="16sp"
+            android:text="确定"
+            android:background="@color/transparent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bithday_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/six_dp_corner_shape_white"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.hishixi.wheel.WheelView
+                android:id="@+id/year"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <com.hishixi.wheel.WheelView
+                android:id="@+id/month"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+
+            <com.hishixi.wheel.WheelView
+                android:id="@+id/day"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
